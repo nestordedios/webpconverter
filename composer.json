@@ -1,0 +1,29 @@
+{
+    "name": "nestordedios/webpconverter",
+    "description": "Convert JPEG, JPG PNG images to WEBP format for extra image loading performance.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Néstor de Dios Fernández",
+            "email": "nestor@twokings.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "../../vendor/twig/twig": "^2.12 | ^3.0"
+    },
+    "require-dev": {
+        "../../vendor/bolt/core": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NestorDeDiosFernandez\\WebpConverterExtension\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "NestorDeDiosFernandez\\WebpConverterExtension\\Extension"
+    }
+}
